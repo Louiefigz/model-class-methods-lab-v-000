@@ -21,9 +21,9 @@ RSpec.configure do |config|
     set_up_database
   end
 
-  config.after do
-    ActiveRecord::Base.subclasses.each(&:delete_all)
-  end
+  # config.after do
+  #   ActiveRecord::Base.subclasses.each(&:delete_all)
+  # end
 end
 
 def set_up_database
